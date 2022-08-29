@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: ./
+    working_dir: /workspaces/app/
+    command: python reacji-channeler-bot.py
+    volumes:
+      - ./:/workspaces/app/
